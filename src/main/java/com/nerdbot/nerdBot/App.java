@@ -32,8 +32,8 @@ import net.dv8tion.jda.core.managers.GuildController;
 
 public class App extends ListenerAdapter
 {
-	static List<Nerd> nerds = new ArrayList<>();
-	static List<Message> messageList = new ArrayList<>();
+	static List<Nerd> nerds = new ArrayList<Nerd>();
+	static List<Message> messageList = new ArrayList<Message>();
 	static boolean isListening = false;
 	static String gameState = "";
 	static User player = null;
