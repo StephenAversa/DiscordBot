@@ -42,8 +42,8 @@ public class App extends ListenerAdapter
 	static int bet = 0;
 	
 	//blackjack
-	static List<String> botHand = new ArrayList<>();
-	static List<String> hand = new ArrayList<>();
+	static List<String> botHand = new ArrayList<String>();
+	static List<String> hand = new ArrayList<String>();
 	
     public static void main( String[] args ) throws Exception
     {
@@ -215,7 +215,12 @@ public class App extends ListenerAdapter
     		}
     	messageList.add(msg);
     	}
-    	
+    	if (msg.getContentRaw().contains("supplements") || msg.getContentRaw().contains("Supplements")){
+    		User mention = evt.getAuthor();
+    		kill(evt,mention);
+    		objMsgChannel.sendMessage("Fuck off Paul.").queue();
+    		
+    	}
     }
     
     public void savePoints() throws FileNotFoundException, IOException{ 	
