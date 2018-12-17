@@ -1,7 +1,7 @@
 package com.nerdbot.nerdBot;
 
 public class Ref {
-	public static final String token = "NDMzODA3NjI0NDkzMDcyMzg0.DbBOXg.UGUMyV5roIOI-oy0XyCpfsm_9XE";
+	public static final String token = " ";
 	public static final char prefix = '!';
 	
 	
